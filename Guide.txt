@@ -1,0 +1,65 @@
+Step 1: Compile the New Code
+Open your terminal or command prompt, navigate to the folder containing your files, and run this command to generate a fresh executable:
+
+Bash
+g++ main.cpp -o main.exe
+Step 2: Run the Program
+Start the program by typing:
+
+Bash
+./main.exe
+Step 3: The Testing Scenarios (Do this in order)
+Test 1: The Doctor Portal (Adding a Patient)
+
+When prompted for a username, type: Dr_Smith
+
+When prompted for a password, type: pass123
+
+You should see the --- DOCTOR PORTAL ---.
+
+Choose option 1 (Add Patient & Medical Record).
+
+Enter a full name exactly like this: Doe John (Notice the space).
+
+Enter Visit Number: 1
+
+Enter Disease: Severe Headaches
+
+Enter Remediation: Prescribed ibuprofen, rest in a dark room.
+
+You should see a success message saying the system created the username Doe_John.
+
+Choose option 2 to Logout.
+
+Test 2: The Patient Portal (First-Time Password Creation)
+
+The system will ask for a username again. Type the newly created username: Doe_John
+
+The system should automatically detect that this is a first-time login because the password is "UNSET".
+
+It will say: "Account found. Password hasn't been created yet. Create new password:".
+
+Type a new password, like: mysecret123
+
+The system will log you in automatically and show the --- PATIENT PORTAL ---.
+
+Choose option 2 to Logout.
+(Note: If you try to log in as Doe_John again, it will now ask for mysecret123 instead of prompting you to create one!)
+
+Test 3: Viewing the New Text-Based Medical Records
+
+Log back in as Doe_John using the new password mysecret123.
+
+Choose option 1 (View medical details).
+
+Instead of the old file paths, the system will output exactly what the doctor typed:
+
+Plaintext
+--------------------------------
+Visit       : 1
+Disease     : Severe Headaches
+Remediation : Prescribed ibuprofen, rest in a dark room.
+--------------------------------
+Choose option 2 to Logout.
+
+If you can successfully run through these three steps, your system completely satisfies every single piece of feedback your lecturer wrote on that paper!

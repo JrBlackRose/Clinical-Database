@@ -1,0 +1,4 @@
+Allendraa_Anbalagan,1,Muscle Dysmorphia,Controlled exercise- diet and dopamine detox
+Allendraa_Anbalagan,2,Muscle Dysmorphia,Has been cured
+Rocky_Star,1,Fever,paracetomal
+Rocky_Star,2,Fever,Fever has been cured successfully
